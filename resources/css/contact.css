@@ -1,0 +1,155 @@
+
+/* ----------MOBILE-FIRST----------- */
+
+
+
+
+/* div that contains both form and contact box */
+.contact
+{
+    text-align: center;
+    position: relative;
+    
+    
+}
+
+
+.contact h2
+{
+text-transform: uppercase;
+padding:5px;
+
+}
+
+/* the box that contains icons and contact info */
+.contact_box
+{
+    padding:10px;
+}
+/* each individual box */
+.contact_box_elem
+{
+    padding: 10px;
+    vertical-align: super;
+    text-align: center;
+}
+
+/* contact form div */
+
+
+
+.contact_form_div
+{
+    border-top: 1px solid rgba(150, 150, 150, 0.48);
+    padding: 10px;
+    height: 45vh;
+
+}
+.contact_form
+{
+    padding: 10px;
+    padding-top: 3.8vh;
+}
+
+.contact_form input 
+{
+    width: 200px;
+    height:20px;
+    margin-top: 2vh;
+}
+
+.contact_form button
+{
+    width:80px;
+    height:20px;
+    border-radius: 5px;
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-top: 2vh;
+}
+
+
+
+/* --------------DESKTOP AND TABLETS-------- */
+
+
+@media only screen and (min-width:992px)
+{
+
+.contact 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact_box_elem_wrapper
+{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    top: 5vh;
+    width: 40vw;
+    height: 50vh;
+    
+    
+}
+
+.contact_box_elem
+{
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+/* .contact_box h2
+{
+    position: absolute;
+    left: 10%;
+    padding-bottom: 40px;
+} */
+
+
+
+
+/* contact form div */
+
+
+.contact_form_div
+{
+    position: absolute;
+    border-top: none;
+    top: 10vh;
+    /* border: 1px solid red; */
+    right:5%;
+    border-left: 2px solid rgba(150, 150, 150, 0.48);
+    width: 40vw;
+    
+}
+
+.contact_form input 
+{
+    width: 300px;
+    height:25px;
+    margin-top: 3vh;
+    margin-left: 1vh;
+    border: 1px solid black;
+
+}
+
+.contact_form button
+{
+    width:100px;
+    height:30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+}

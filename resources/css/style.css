@@ -1,0 +1,426 @@
+
+
+
+
+/* -----Mobile first ----*/
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* entire top navigation header */
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url('../images/background0.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    position: relative;
+    transition: 0.2s linear;
+    
+    
+}
+
+.header ul 
+{
+ display: flex;   
+ flex-direction: column;
+ list-style-type: none;
+ justify-content: space-between;
+ width: 40%;
+ position: absolute;
+ top: -100%;
+ right:5%;
+ transition: 0.3s ease-in-out;
+
+}
+
+.header ul li 
+{
+    text-transform: uppercase;
+
+}
+
+.header ul li a
+{
+
+text-decoration: none;
+color: white;
+
+}
+
+
+/* header_text */
+.header_text
+{
+position: absolute;
+bottom: 40%;
+left:5%;
+padding: 10px;
+transition: 2s ease-in-out;
+text-transform: uppercase;
+font-weight: 400;
+}
+
+/* header buttons */
+
+.header_buttons
+{
+    position: absolute;
+    bottom: 35%;
+    left:7%;
+}
+
+.header_buttons button
+{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border-width: thin;
+    text-transform: uppercase;
+}
+
+
+
+/* logo separately */
+
+.logo
+{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.logo img
+{
+    height: 40px;
+    width: 60px;
+}
+/* burger icon span*/
+.nav_icon
+{
+    padding-right: 10px;
+    padding-top:7px;
+    position: absolute;
+    top: 12px;
+    right:10px;
+    
+
+}
+
+
+
+
+
+
+
+
+/* index page below the header */
+
+/* what we offer - div */
+
+.offer
+{
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.offer_box p
+{
+    padding-left: 10px;
+    padding-right:10px;
+}
+
+.offer h2
+{
+text-transform: uppercase;
+padding: 5px;
+display: inline;
+border-bottom: 0.5px solid;
+border-color: rgba(0,0,0,0.5);
+border-radius: 5px;
+}
+
+
+
+
+/* Our success stories div*/
+
+.success_stories
+{
+    width: 100%;
+    text-align: center;
+    background-image: url('../images/backgroundsuccess.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 65vh;
+    color: white;
+    
+}
+
+.success_stories h2
+{
+    text-transform: uppercase;
+
+}
+
+.success_stories p
+{
+    transition: 2s ease-in-out;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+/* FOOTER */
+
+footer
+{
+    background-color: black;
+    
+
+}
+
+.footbar
+{
+    display: flex;
+    justify-content: space-between;
+    height: 1vh;
+    width: 100%;
+    color: white;
+    font-size: 8px;
+    height: 8vh;
+    align-items: center;
+    font-weight: 600;
+}
+
+.footbar ul 
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.footbar li a 
+{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: 600;
+    
+}
+
+.footbar p 
+{
+    padding-right: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------DESKTOP AND TABLETS-------- */
+
+
+@media only screen and (min-width:992px)
+{
+
+    /* entire header */
+
+.header
+{
+    height: 100vh;
+    transition: 2s ease-in;
+}
+
+.header ul 
+{
+    top: 5%;
+    right: 10%;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header ul li a
+{
+    padding: 5px;
+}
+.header ul li a:hover
+{
+    background-color: white;
+    color: black;
+    transition: 2s ease;
+}
+
+
+
+.nav_icon
+{
+    visibility: hidden;
+}
+
+.logo
+{
+    position: absolute;
+    top: 1%;
+    left: 15%;
+
+}
+
+.logo img
+{
+    height: 8vh;
+    width: 8vw;
+}
+
+.header_text
+{
+    text-transform: uppercase;
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    left: 15vw;
+    font-weight: 400;
+}
+
+/* header buttons i.e the two below the header text */
+
+.header_buttons
+{
+    position: absolute;
+    bottom: 35%;
+    left:38%;
+    
+}
+
+.header_buttons button
+{
+    padding: 10px;
+    height: 5vh;
+    width: 10vw;
+    margin-right: 4vw;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border-width: thin;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1vw;
+    transition: 0.5s ease-in;
+}
+
+.header_buttons button:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/* what we offer div */
+
+.offer
+{
+    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.offer_box
+{
+    display: flex;
+
+}
+
+
+/* success stories */
+
+.success_stories
+{
+    height: 50vh;
+    font-size: 20px;
+    padding-top: 60px;
+}
+
+.success_stories h2
+{
+    font-size: 30px;
+}
+
+.story_box
+{
+    display: flex;
+    padding-left: 5%;
+    padding-right:5%;
+}
+
+.story_box p
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 600;
+}
+
+
+
+
+/* footer */
+footer
+{
+    position: relative;
+    bottom: -85vh;
+}
+.footbar
+{
+    height: 7vh;
+}
+
+.footbar ul 
+{
+    padding-left: 1vw;
+}
+
+.footbar ul li 
+{
+    padding: 1vw;
+}
+
+.footbar li a 
+{
+    font-size: 1vw;
+    font-weight: 400;
+    
+
+}
+
+.footbar p
+{
+    padding-right: 2vw;
+    font-size: 1vw;
+    font-weight: 400;
+
+}
+
+
+
+}
