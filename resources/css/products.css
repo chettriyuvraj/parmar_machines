@@ -3,7 +3,6 @@
  
 
 
-
 .header
 {
     height: 60vh;
@@ -35,8 +34,8 @@
 .mobile_catalog button 
 {
     background-color: black;
-    height: 40px;
-    width: 80px;
+    height: 50px;
+    width: 110px;
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 10px;
@@ -142,8 +141,9 @@ footer
         top: 2vw;
         justify-content: space-evenly;
         /* border: 1px solid red; */
-        width: 40%;
+        width: 60%;
         height: 6vh;
+        /* font-size: 2vw; */
         /* border: 1px solid red; */
         
     }
@@ -155,7 +155,7 @@ footer
         color: white;
         text-transform: uppercase;
         padding: 5px;
-        font-size: 2vw;
+        font-size: 1.5vw;
         background-color: black;
         box-shadow: 5px 5px rgba(54, 53, 50, 0.605);
         transition: 1s ease-in;

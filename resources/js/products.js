@@ -100,7 +100,7 @@ var product_display =
 
 
         setTimeout(() => {
-            products_button.style.top = "-5vh"
+            products_button.style.top = "-2vh"
             products_button.style.opacity = "1";
             // products_button.style.display = "none";
             drum_list.style.display = 'none';
@@ -160,7 +160,7 @@ var product_display =
 
 
      setTimeout(() => {
-            products_button.style.top = "-5vh"
+            products_button.style.top = "-2vh"
             products_button.style.opacity = "1";
             // products_button.style.display = "none";
             barrel_list.style.display = "none";

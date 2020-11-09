@@ -208,7 +208,7 @@ function scroll_to_contact(e) {
     if (document.title =="Products Listing | Parmar Machines")
     {
         e.preventDefault();
-        window.location = "./index.html#contact_us";
+        window.location = "./index.html#contact_nav";
         console.log("yowtf");
     }
     else
