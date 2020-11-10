@@ -36,6 +36,7 @@ var product_display =
         this.elements.products_display.classList.add("products_display");
         this.elements.products_image.classList.add("products_image");
         this.elements.products_title.classList.add("products_title");
+        this.elements.products_text.classList.add("products_text");
         
 
 
@@ -111,7 +112,8 @@ var product_display =
         var products_main = document.querySelector(".products_main");
         var barrel_list = document.querySelector(".barrel_list");
         var products_display = document.querySelector(".products_display");
-        var products_text = document.querySelectorAll("p")[1];
+        // var products_text = document.querySelectorAll("p")[2];
+        var products_text = document.querySelector(".products_text");
         var products_title = document.querySelector(".products_title");
 
 
@@ -172,7 +174,8 @@ var product_display =
     var products_main = document.querySelector(".products_main");
     var drum_list = document.querySelector(".drum_list");
     var products_display = document.querySelector(".products_display");
-    var products_text = document.querySelectorAll("p")[1];
+    // var products_text = document.querySelectorAll("p")[2];
+    var products_text = document.querySelector(".products_text");
     var products_title = document.querySelector(".products_title");
    
     
@@ -215,6 +218,7 @@ var product_display =
         })
         .then(function(data){
             console.log(data);
+            console.log(elem);
             elem.innerHTML = data;
         });
 
@@ -264,7 +268,8 @@ var product_display =
                     extension = 'jpg';
                 }
                 var products_display = document.querySelector(".products_display");
-                var products_text = document.querySelectorAll("p")[1];
+                // var products_text = document.querySelectorAll("p")[2];
+                var products_text = document.querySelector(".products_text");
                 var products_title = document.querySelector(".products_title");
 
 
